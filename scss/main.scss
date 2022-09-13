@@ -90,13 +90,18 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-between ;
-        transform: scaleY(0);
+        transform: scaleY(1);
         transform-origin: top;
-        border-radius: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        &.inactive{
+            transform: scaleY(0);
+        }
 
         input{
             height: 100%;
-            width: 100;
+            width: 100%;
             font-size: 1.6rem;
             color:$black;    
             padding: 1rem;
@@ -118,15 +123,24 @@ body{
      .cart-items-container{
         position: absolute;
         top:100%;
-        right: -100%;
+        right:0;
         height:100vh-35vh;
         // height:900px-152px;
         width: 35rem;
         background: #fff;
         padding: 0 1.5rem;
         overflow: hidden;
-
      }
+
+    //  .cart-items-container{
+    //     right:0;
+    // }
+
+    .cart-items-container.inactive{
+        right:-100%;
+    }
+
+     
 
      .cart-items-container .cart-item{
         position:relative;

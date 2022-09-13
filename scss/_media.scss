@@ -4,35 +4,38 @@
             .header{
                 padding: 1.5rem 2rem; 
                 // background-color: red;
-            }
-            .header .navbar{
-                position: absolute;
-                top:100%; right: -100;
-                background: #fff;
-                width: 30rem;
-                height: 100vh-35vh;
+                .navbar{
+                    position: absolute;
+                    top:100%; right:0;
+                    background: #fff;
+                    width: 30rem;
+                    height: 100vh; 
+                        // height: 100vh-35vh; 
+                }
 
+                .navbar.inactive {
+                    right:-100%;
+                }
+
+                .navbar a{
+                    color: $black;
+                    display: block; 
+                    margin: 1.5rem;
+                    padding:0.5rem;
+                    font-size: 2rem; 
+                }
             }
-            .header .navbar a{
-                color: $black;
-                display: block; 
-                margin: 1.5rem;
-                padding:0.5rem;
-                font-size: 2rems;
-               
-            }
-            
+
+
             .icons{
                 #menu-btn{
                  display: inline-block; 
-             }
-            }
-         
-         
-            
+                }
+            }         
         }
+        
    }
 
-   @media (max-width: 991px){
+//    @media (max-width: 991px){
     
-   }
+//    }

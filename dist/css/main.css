@@ -21,17 +21,20 @@
   html .header .navbar {
     position: absolute;
     top: 100%;
-    right: -100;
+    right: 0;
     background: #fff;
     width: 30rem;
-    height: 65vh;
+    height: 100vh;
+  }
+  html .header .navbar.inactive {
+    right: -100%;
   }
   html .header .navbar a {
     color: #13131a;
     display: block;
     margin: 1.5rem;
     padding: 0.5rem;
-    font-size: 2rems;
+    font-size: 2rem;
   }
   html .icons #menu-btn {
     display: inline-block;
@@ -119,13 +122,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transform: scaleY(0);
+  transform: scaleY(1);
   transform-origin: top;
-  border-radius: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header .search-form.inactive {
+  transform: scaleY(0);
 }
 .header .search-form input {
   height: 100%;
-  width: 100;
+  width: 100%;
   font-size: 1.6rem;
   color: #13131a;
   padding: 1rem;
@@ -143,12 +150,15 @@ body {
 .header .cart-items-container {
   position: absolute;
   top: 100%;
-  right: -100%;
+  right: 0;
   height: 65vh;
   width: 35rem;
   background: #fff;
   padding: 0 1.5rem;
   overflow: hidden;
+}
+.header .cart-items-container.inactive {
+  right: -100%;
 }
 .header .cart-items-container .cart-item {
   position: relative;
