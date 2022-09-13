@@ -11,24 +11,30 @@
   transition: 0.2s linear;
 }
 
-@media (max-width: 991px) {
+@media all and (max-width: 991px) {
   html {
     font-size: 55%;
   }
-  .header {
+  html .header {
     padding: 1.5rem 2rem;
   }
-}
-@media (max-width: 991px) {
-  #menu-btn {
-    display: inline-block;
-  }
-  .header .navbar {
+  html .header .navbar {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -100;
     background: #fff;
-    background: 30rem;
+    width: 30rem;
+    height: 65vh;
+  }
+  html .header .navbar a {
+    color: #13131a;
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rems;
+  }
+  html .icons #menu-btn {
+    display: inline-block;
   }
 }
 html {

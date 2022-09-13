@@ -1,24 +1,38 @@
-   @media (max-width: 991px){
+   @media all and (max-width: 991px){
         html{
             font-size: 55%;
+            .header{
+                padding: 1.5rem 2rem; 
+                // background-color: red;
+            }
+            .header .navbar{
+                position: absolute;
+                top:100%; right: -100;
+                background: #fff;
+                width: 30rem;
+                height: 100vh-35vh;
+
+            }
+            .header .navbar a{
+                color: $black;
+                display: block; 
+                margin: 1.5rem;
+                padding:0.5rem;
+                font-size: 2rems;
+               
+            }
+            
+            .icons{
+                #menu-btn{
+                 display: inline-block; 
+             }
+            }
+         
+         
+            
         }
-        .header{
-            padding: 1.5rem 2rem;
-        }
-    
    }
 
    @media (max-width: 991px){
-        #menu-btn{
-            display: inline-block;
-        }
-
-        .header .navbar{
-            position: absolute;
-            top: 100%; right: 0;
-            background: #fff;
-            background: 30rem;
-
-
-        }
+    
    }
