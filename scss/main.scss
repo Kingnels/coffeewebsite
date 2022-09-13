@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap'); 
 @import "settings";
 @import "media";
+@import "home";
 
 
 
@@ -26,6 +27,10 @@ html{
 
 body{
     background: $bg;
+}
+
+section{
+    padding: 2rem 7%;
 }
 .btn{
     margin-top: 1rem;
@@ -90,13 +95,18 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-between ;
-        transform: scaleY(0);
+        transform: scaleY(1);
         transform-origin: top;
         border-radius: 20px;
+        overflow: hidden;
+
+        &.inactive{
+            transform: scaleY(0);
+        }
 
         input{
             height: 100%;
-            width: 100;
+            width: 100%;
             font-size: 1.6rem;
             color:$black;    
             padding: 1rem;
@@ -118,15 +128,24 @@ body{
      .cart-items-container{
         position: absolute;
         top:100%;
-        right: -100%;
+        right:0;
         height:100vh-35vh;
         // height:900px-152px;
         width: 35rem;
         background: #fff;
         padding: 0 1.5rem;
         overflow: hidden;
-
      }
+
+    //  .cart-items-container{
+    //     right:0;
+    // }
+
+    .cart-items-container.inactive{
+        right:-100%;
+    }
+
+     
 
      .cart-items-container .cart-item{
         position:relative;
