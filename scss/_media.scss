@@ -1,41 +1,76 @@
-   @media all and (max-width: 991px){
-        html{
-            font-size: 55%;
-            .header{
-                padding: 1.5rem 2rem; 
-                // background-color: red;
-                .navbar{
-                    position: absolute;
-                    top:100%; right:0;
-                    background: #fff;
-                    width: 30rem;
-                    height: 100vh; 
-                        // height: 100vh-35vh; 
-                }
+@media all and (max-width: 991px){
+    html{
+        font-size: 55%;
+        .header{
+            padding: 1.5rem 2rem;
+        }
+        section{
+            padding: 2rem;
+        }
+    }
+}
 
-                .navbar.inactive {
-                    right:-100%;
-                }
 
-                .navbar a{
-                    color: $black;
-                    display: block; 
-                    margin: 1.5rem;
-                    padding:0.5rem;
-                    font-size: 2rem; 
-                }
+@media all and (max-width: 768px){
+    html{
+        font-size: 55%;
+        .header{
+            padding: 1.5rem 2rem; 
+            // background-color: red;
+
+            .search-form{
+                // background-color:red;
+                width: 90%;
+                right: 2rem;
             }
 
+            .navbar{
+                position: absolute;
+                top:100%; right:0;
+                background: #fff;
+                width: 30rem;
+                height: 100vh; 
+                    // height: 100vh-35vh; 
+            }
 
+            .navbar.inactive{
+                right:-100%;
+            }
+
+            .navbar a{
+                color: $black;
+                display: block; 
+                margin: 1.5rem;
+                padding:0.5rem;
+                font-size: 2rem; 
+            }
+        
             .icons{
                 #menu-btn{
-                 display: inline-block; 
+                    display: inline-block; 
                 }
             }         
-        }
         
-   }
+        }
+        .home{
+            background-position: left;
+            justify-content: center;
+            text-align: center;
 
-//    @media (max-width: 991px){
-    
-//    }
+            h3{
+                font-size: 4.5rem;
+            }
+
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 450px){
+html{
+    font-size: 50%;
+   
+}
+}

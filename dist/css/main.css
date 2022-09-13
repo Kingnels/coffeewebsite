@@ -18,6 +18,21 @@
   html .header {
     padding: 1.5rem 2rem;
   }
+  html section {
+    padding: 2rem;
+  }
+}
+@media all and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  html .header {
+    padding: 1.5rem 2rem;
+  }
+  html .header .search-form {
+    width: 90%;
+    right: 2rem;
+  }
   html .header .navbar {
     position: absolute;
     top: 100%;
@@ -36,10 +51,50 @@
     padding: 0.5rem;
     font-size: 2rem;
   }
-  html .icons #menu-btn {
+  html .header .icons #menu-btn {
     display: inline-block;
   }
+  html .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+  html .home h3 {
+    font-size: 4.5rem;
+  }
+  html .home p {
+    font-size: 1.5rem;
+  }
 }
+@media all and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
+.home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../images/home-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home .content {
+  max-width: 60rem;
+}
+.home h3 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.home p {
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #eee;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -59,6 +114,10 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background: #010103;
+}
+
+section {
+  padding: 2rem 7%;
 }
 
 .btn {
@@ -124,7 +183,7 @@ body {
   justify-content: space-between;
   transform: scaleY(1);
   transform-origin: top;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
 }
 .header .search-form.inactive {
