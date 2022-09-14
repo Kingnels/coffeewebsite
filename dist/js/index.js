@@ -22,6 +22,9 @@ document.querySelector('#cart-btn').onclick = ()=> {
     searchForm.classList.add("inactive");
 }
 
+
+// Removing all button effects
+
 window.onscroll = () =>{
     navbar.classList.add("inactive");
     searchForm.classList.add("inactive");
@@ -60,7 +63,7 @@ document.querySelector('.menu').onclick =()=>{
 
 
 
-// alert("hi")
+// alert("you are welcome!")
 
 
 
