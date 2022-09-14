@@ -1,14 +1,126 @@
 .contact{
     .row{
         display: flex;
-        align-items:center;
+        flex-wrap: wrap;
+        // align-items:center;
         background: $black;
-        flex:wrap;
         gap:1rem;
         
         .map{
+            min-height: 250px;
             flex: 1 1 45rem;
+            width: 100%;
+            object-fit: cover;
         }
 
+        form{
+            border:.5px solid whitesmoke;
+            flex: 1 1 45rem;
+            padding:5rem 2rem;
+            text-align: center;
+               
+            h3{
+                font-size: 3.5rem;
+                text-transform: uppercase;
+                color: #fff;
+            }
+
+            .inputBox{
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                background:$bg;
+                border:$border;
+
+                input{
+                    width:100%;
+                    padding:2rem;
+                    font-size: 1.7rem;
+                    color: #fff;
+                    text-transform: none;
+                    background: none;
+                    border: none;
+                }
+
+                span{
+                    color:#fff;
+                    font-size: 2rem;
+                    padding-left: 2rem;
+                }
+            }
+
+        }
+
+    }
+}
+
+
+
+// this the blog section 
+
+
+.blogs{
+    // align-items: center;
+    .heading{
+        span{
+            text-transform: uppercase;
+        }
+    }
+    .box-container{
+        display: grid;
+        grid-template-columns:repeat(auto-fit,minmax(30rem, 1fr));
+        gap: 1.5rem;
+
+        .box{
+            border:$border;
+            // background-color: aqua;
+            
+            .image{
+            height: 25rem;
+            overflow: hidden;
+            width: 100%;
+            img{
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+                &:hover{
+                    transform: scale(1.2);
+                    // transform: rotate(360deg);
+                    // transition: all 2s ;
+                    // border: 2px solid $main-color;
+                    // border-radius: 20px;
+                }
+            }
+
+
+            }
+            .content{
+            padding:2rem;
+
+            .title{
+                font-size:2.5rem;
+                line-height: 1.5;
+                color: #fff;
+                &:hover{
+                    color: $main-color;
+                }
+            }
+            span{
+                color:$main-color;
+                display: block;
+                padding-top:1rem ;
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1.6rem;
+                line-height: 1.8;
+                color: #ccc;
+                padding: 1rem 0;
+            }
+
+            }
+
+        }
     }
 }

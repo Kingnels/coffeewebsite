@@ -5,10 +5,13 @@
 @import "about";
 @import "products";
 @import "review";
+@import "contact";
+@import "footer";
 
 
 
 html{
+    display: flex;
     font-size:  62.5%;
     overflow-x: hidden;
     scroll-padding-top: 9rem;
@@ -30,6 +33,7 @@ html{
 
 body{
     background: $bg;
+    // overflow: hidden;
 }
 .heading{
     text-align: center;

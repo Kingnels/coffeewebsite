@@ -24,6 +24,7 @@
             object-fit: cover;
 
             &:hover {
+                // translate: 40px 15px;
                 transform: scale(1.3);
                 border: 2px solid white;
             }
