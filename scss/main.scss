@@ -2,6 +2,8 @@
 @import "settings";
 @import "media";
 @import "home";
+@import "about";
+@import "products";
 
 
 
@@ -28,10 +30,21 @@ html{
 body{
     background: $bg;
 }
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
 
+.heading span{
+    color: $main-color;
+}
 section{
     padding: 2rem 7%;
 }
+
 .btn{
     margin-top: 1rem;
     display: inline-block;
@@ -131,7 +144,7 @@ section{
         right:0;
         height:100vh-35vh;
         // height:900px-152px;
-        width: 35rem;
+        width: 30rem;
         background: #fff;
         padding: 0 1.5rem;
         overflow: hidden;

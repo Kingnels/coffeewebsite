@@ -28,6 +28,29 @@ window.onscroll = () =>{
     cartItem.classList.add("inactive");
 }
 
+document.querySelector('.home').onclick =()=>{
+    navbar.classList.add("inactive");
+    searchForm.classList.add("inactive");
+    cartItem.classList.add("inactive");
+}
+
+document.querySelector('.about').onclick =()=>{
+    navbar.classList.add("inactive");
+    searchForm.classList.add("inactive");
+    cartItem.classList.add("inactive");
+}
+document.querySelector('.products').onclick =()=>{
+    navbar.classList.add("inactive");
+    searchForm.classList.add("inactive");
+    cartItem.classList.add("inactive");
+}
+
+document.querySelector('.menu').onclick =()=>{
+    navbar.classList.add("inactive");
+    searchForm.classList.add("inactive");
+    cartItem.classList.add("inactive");
+}
+
 
 
 

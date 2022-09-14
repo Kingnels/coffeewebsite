@@ -95,6 +95,117 @@
   color: #eee;
 }
 
+.about .row {
+  display: flex;
+  align-items: center;
+  background: #13131a;
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+.about .row .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.about .row .content p {
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.menu .box-container .box {
+  padding: 5rem;
+  text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+.menu .box-container .box:hover {
+  background: #fff;
+}
+.menu .box-container .box:hover > * {
+  color: #13131a;
+}
+.menu .box-container img {
+  height: 10rem;
+}
+.menu .box-container h3 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.menu .box-container .price {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+.menu .box-container span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: ligter;
+}
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.products .box {
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+.products .box .icons a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  margin: 0.3rem;
+}
+.products .box .icons a:hover {
+  background: #d3ad7f;
+}
+.products .box .image {
+  padding: 2.5rem 0;
+}
+.products .box .image .img {
+  height: 25rem;
+}
+.products .box .content h3 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.products .box .content .stars {
+  padding: 1.5rem;
+}
+.products .box .content .stars i {
+  font-size: 1.7rem;
+  color: #d3ad7f;
+}
+.products .box .content .price {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.products .box .content .price span {
+  text-decoration: line-through;
+  font-weight: ligter;
+  font-size: 1.5rem;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -114,6 +225,18 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background: #010103;
+}
+
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+
+.heading span {
+  color: #d3ad7f;
 }
 
 section {
@@ -211,7 +334,7 @@ section {
   top: 100%;
   right: 0;
   height: 65vh;
-  width: 35rem;
+  width: 30rem;
   background: #fff;
   padding: 0 1.5rem;
   overflow: hidden;
