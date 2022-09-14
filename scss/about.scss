@@ -1,0 +1,82 @@
+.about .row{
+    display: flex;
+    align-items: center;
+    background:$black;
+    flex-wrap: wrap;
+    
+    .image{
+        flex: 1 1 45rem;
+        // width:100%
+    
+    }  
+
+    img{
+       width:100%;
+    }
+
+    .content{
+        flex: 1 1 45rem;
+        padding: 2rem;
+
+        h3{
+            font-size: 3rem;
+            color:#fff;
+        }
+ 
+        p{
+            font-size: 1.6rem;
+            color:#ccc;
+            padding:1rem 0;
+            line-height: 1.8;
+        }  
+    }
+
+
+}
+
+
+// menu styles starts here 
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+    .box{
+        padding: 5rem;
+        text-align: center;
+        border:$border;
+
+        &:hover{
+            background: #fff;
+            // transform: rotateY(180deg);
+            // transform-style: preserve-3d;
+        }
+
+        &:hover >* {
+            color:$black;
+         }
+    }
+    img{
+        height: 10rem;
+    }
+
+    h3{
+        color: #fff;
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+
+    .price{
+        color: #fff;
+        font-size: 2.5rem;
+        padding: .5rem 0;
+    }
+    span{
+        // color: #fff;
+        font-size: 1.5rem;
+       text-decoration: line-through;
+       font-weight: ligter;
+    }
+
+}

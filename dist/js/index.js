@@ -22,7 +22,33 @@ document.querySelector('#cart-btn').onclick = ()=> {
     searchForm.classList.add("inactive");
 }
 
+
+// Removing all button effects
+
 window.onscroll = () =>{
+    navbar.classList.add("inactive");
+    searchForm.classList.add("inactive");
+    cartItem.classList.add("inactive");
+}
+
+document.querySelector('.home').onclick =()=>{
+    navbar.classList.add("inactive");
+    searchForm.classList.add("inactive");
+    cartItem.classList.add("inactive");
+}
+
+document.querySelector('.about').onclick =()=>{
+    navbar.classList.add("inactive");
+    searchForm.classList.add("inactive");
+    cartItem.classList.add("inactive");
+}
+document.querySelector('.products').onclick =()=>{
+    navbar.classList.add("inactive");
+    searchForm.classList.add("inactive");
+    cartItem.classList.add("inactive");
+}
+
+document.querySelector('.menu').onclick =()=>{
     navbar.classList.add("inactive");
     searchForm.classList.add("inactive");
     cartItem.classList.add("inactive");
@@ -37,7 +63,7 @@ window.onscroll = () =>{
 
 
 
-// alert("hi")
+// alert("you are welcome!")
 
 
 

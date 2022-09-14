@@ -39,7 +39,7 @@
     right: 0;
     background: #fff;
     width: 30rem;
-    height: 100vh;
+    height: 65vh;
   }
   html .header .navbar.inactive {
     right: -100%;
@@ -95,7 +95,300 @@
   color: #eee;
 }
 
+.about .row {
+  display: flex;
+  align-items: center;
+  background: #13131a;
+  flex-wrap: wrap;
+}
+.about .row .image {
+  flex: 1 1 45rem;
+}
+.about .row img {
+  width: 100%;
+}
+.about .row .content {
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+.about .row .content h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.about .row .content p {
+  font-size: 1.6rem;
+  color: #ccc;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.menu .box-container .box {
+  padding: 5rem;
+  text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+.menu .box-container .box:hover {
+  background: #fff;
+}
+.menu .box-container .box:hover > * {
+  color: #13131a;
+}
+.menu .box-container img {
+  height: 10rem;
+}
+.menu .box-container h3 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.menu .box-container .price {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+.menu .box-container span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: ligter;
+}
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.products .box {
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+.products .box .icons a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  margin: 0.3rem;
+}
+.products .box .icons a:hover {
+  background: #d3ad7f;
+}
+.products .box .image {
+  padding: 2.5rem 0;
+}
+.products .box .image .img {
+  height: 25rem;
+}
+.products .box .content h3 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.products .box .content .stars {
+  padding: 1.5rem;
+}
+.products .box .content .stars i {
+  font-size: 1.7rem;
+  color: #d3ad7f;
+}
+.products .box .content .price {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.products .box .content .price span {
+  text-decoration: line-through;
+  font-weight: ligter;
+  font-size: 1.5rem;
+}
+
+.review .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.review .box {
+  padding: 2rem;
+  text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+.review .box p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 2rem 0;
+}
+.review .box .user {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.review .box .user:hover {
+  transform: scale(1.3);
+  border: 2px solid white;
+}
+.review .box h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #fff;
+}
+.review .box .stars i {
+  font-size: 1.5rem;
+  color: #d3ad7f;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  background: #13131a;
+  gap: 1rem;
+}
+.contact .row .map {
+  min-height: 250px;
+  flex: 1 1 45rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact .row form {
+  border: 0.5px solid whitesmoke;
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.contact .row form h3 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.contact .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: #010103;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+.contact .row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+  border: none;
+}
+.contact .row form .inputBox span {
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.blogs .heading span {
+  text-transform: uppercase;
+}
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.blogs .box-container .box {
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+.blogs .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  width: 100%;
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.blogs .box-container .box .image img:hover {
+  transform: scale(1.2);
+}
+.blogs .box-container .box .content {
+  padding: 2rem;
+}
+.blogs .box-container .box .content .title {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #fff;
+}
+.blogs .box-container .box .content .title:hover {
+  color: #d3ad7f;
+}
+.blogs .box-container .box .content span {
+  color: #d3ad7f;
+  display: block;
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+.blogs .box-container .box .content p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #ccc;
+  padding: 1rem 0;
+}
+
+.footer {
+  background: #13131a;
+  text-align: center;
+}
+.footer .share {
+  padding: 1rem 0;
+}
+.footer .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  margin: 0.3rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+.footer .share a:hover {
+  background-color: #d3ad7f;
+  color: #13131a;
+}
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+.footer .links a {
+  padding: 0.7rem 2rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 2rem;
+}
+.footer .links a:hover {
+  background: #d3ad7f;
+}
+.footer .credits {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: lighter;
+  padding: 1.5rem;
+  text-transform: none;
+}
+.footer .credits span {
+  color: #d3ad7f;
+}
+
 html {
+  display: flex;
   font-size: 62.5%;
   overflow-x: hidden;
   scroll-padding-top: 9rem;
@@ -114,6 +407,18 @@ html::-webkit-scrollbar-thumb {
 
 body {
   background: #010103;
+}
+
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+
+.heading span {
+  color: #d3ad7f;
 }
 
 section {
@@ -211,7 +516,7 @@ section {
   top: 100%;
   right: 0;
   height: 65vh;
-  width: 35rem;
+  width: 30rem;
   background: #fff;
   padding: 0 1.5rem;
   overflow: hidden;

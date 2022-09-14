@@ -1,0 +1,59 @@
+.footer{
+    background: $black;
+    text-align: center;
+
+    .share{
+        padding:1rem 0;
+        a{
+            height:5rem ;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            color: #fff;
+            margin:.3rem;
+            border:$border;
+            border-radius: 50%;
+
+            &:hover{
+                background-color: $main-color;
+                color: $black;
+            }
+        }
+
+    }
+    
+    .links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        gap: 1rem;
+
+        a{
+            padding: .7rem 2rem;
+            border:$border;
+            color: #fff;
+            font-size: 2rem;
+
+            &:hover{
+                background: $main-color;
+            }
+
+        }
+    }
+
+    .credits{
+        font-size: 1.2rem;
+        color:#fff;
+        font-weight: lighter;
+        padding:1.5rem;
+        text-transform: none;
+
+        span{
+            color: $main-color;
+        }
+    }
+
+
+
+}
